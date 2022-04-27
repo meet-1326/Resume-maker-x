@@ -57,10 +57,18 @@ public class experiencce extends AppCompatActivity {
 
                     Intent intent = new Intent(experiencce.this,skill.class);
 
-                    intent.putExtra(company_name,"company_name");
-                    intent.putExtra(job,"job");
-                    intent.putExtra(description,"description");
-                    intent.putExtra(year,"year");
+                    intent.putExtra("name",name);
+                    intent.putExtra("email",email);
+                    intent.putExtra("phon",phon);
+                    intent.putExtra("address",address);
+                    intent.putExtra("course",course);
+                    intent.putExtra("school",school);
+                    intent.putExtra("grade",grade);
+                    intent.putExtra("eduction_year",eduction_year);
+                    intent.putExtra("company_name",company_name);
+                    intent.putExtra("job",job);
+                    intent.putExtra("description",description);
+                    intent.putExtra("year",year);
 
                     startActivity(intent);
 

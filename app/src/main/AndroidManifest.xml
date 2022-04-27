@@ -10,29 +10,32 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Resumemaker">
         <activity
+            android:name=".tamplate"
+            android:exported="false" />
+        <activity
             android:name=".refrence"
             android:exported="false"
-            android:label="Refrence"/>
+            android:label="Refrence" />
         <activity
             android:name=".objective"
             android:exported="false"
-            android:label="Objective"/>
+            android:label="Objective" />
         <activity
             android:name=".workprofile"
             android:exported="false"
-            android:label="Work Profile"/>
+            android:label="Work Profile" />
         <activity
             android:name=".skill"
             android:exported="false"
-            android:label="Skill"/>
+            android:label="Skill" />
         <activity
             android:name=".experiencce"
             android:exported="false"
-            android:label="Experience"/>
+            android:label="Experience" />
         <activity
             android:name=".eduction"
             android:exported="false"
-            android:label="Eduction"/>
+            android:label="Eduction" />
         <activity
             android:name=".personal"
             android:exported="false"

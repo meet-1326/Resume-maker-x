@@ -46,10 +46,10 @@ public class personal extends AppCompatActivity {
                         address = edaddress.getText().toString();
 
                         Intent intent = new Intent(personal.this,experiencce.class);
-                        intent.putExtra(name,"name");
-                        intent.putExtra(email,"email");
-                        intent.putExtra(phon,"phon");
-                        intent.putExtra(address,"address");
+                        intent.putExtra("name",name);
+                        intent.putExtra("email",email);
+                        intent.putExtra("phon",phon);
+                        intent.putExtra("address",address);
                         startActivity(intent);
 
                     }

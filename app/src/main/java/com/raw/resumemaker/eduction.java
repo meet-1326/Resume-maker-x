@@ -52,10 +52,14 @@ public class eduction extends AppCompatActivity {
                 phon = getIntent().getStringExtra(phon);
                 address = getIntent().getStringExtra(address);
 
-                intent.putExtra(course,"course");
-                intent.putExtra(school,"school");
-                intent.putExtra(grade,"grade");
-                intent.putExtra(eduction_year,"eduction_year");
+                intent.putExtra("name",name);
+                intent.putExtra("email",email);
+                intent.putExtra("phon",phon);
+                intent.putExtra("address",address);
+                intent.putExtra("course",course);
+                intent.putExtra("school",school);
+                intent.putExtra("grade",grade);
+                intent.putExtra("eduction_year",eduction_year);
 
                 startActivity(intent);
 
