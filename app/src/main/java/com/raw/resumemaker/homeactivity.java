@@ -1,4 +1,5 @@
 package com.raw.resumemaker;
+
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.app.Activity;
@@ -12,7 +13,7 @@ public class homeactivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
-        Button create,exit;
+        Button create, exit;
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homeactivity);
@@ -23,7 +24,7 @@ public class homeactivity extends AppCompatActivity {
         create.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(homeactivity.this,personal.class);
+                Intent intent = new Intent(homeactivity.this, personal.class);
                 startActivity(intent);
             }
         });

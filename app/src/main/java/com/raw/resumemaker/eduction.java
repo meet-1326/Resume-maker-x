@@ -10,8 +10,8 @@ import android.widget.EditText;
 
 public class eduction extends AppCompatActivity {
 
-    String name,email,phon,address,course,school,grade,eduction_year;
-    EditText edcourse,edschool,edgrade,edyear;
+    String name, email, phon, address, course, school, grade, eduction_year;
+    EditText edcourse, edschool, edgrade, edyear;
     Button reset, next;
 
     @Override
@@ -45,21 +45,23 @@ public class eduction extends AppCompatActivity {
                 grade = edgrade.getText().toString();
                 eduction_year = edyear.getText().toString();
 
-                Intent intent = new Intent(eduction.this,experiencce.class);
 
-                name = getIntent().getStringExtra(name);
-                email = getIntent().getStringExtra(email);
-                phon = getIntent().getStringExtra(phon);
-                address = getIntent().getStringExtra(address);
+                name = getIntent().getStringExtra("name");
+                email = getIntent().getStringExtra("email");
+                phon = getIntent().getStringExtra("phon");
+                address = getIntent().getStringExtra("address");
 
-                intent.putExtra("name",name);
-                intent.putExtra("email",email);
-                intent.putExtra("phon",phon);
-                intent.putExtra("address",address);
-                intent.putExtra("course",course);
-                intent.putExtra("school",school);
-                intent.putExtra("grade",grade);
-                intent.putExtra("eduction_year",eduction_year);
+                Intent intent = new Intent(eduction.this, experiencce.class);
+
+
+                intent.putExtra("name", name);
+                intent.putExtra("email", email);
+                intent.putExtra("phon", phon);
+                intent.putExtra("address", address);
+                intent.putExtra("course", course);
+                intent.putExtra("school", school);
+                intent.putExtra("grade", grade);
+                intent.putExtra("eduction_year", eduction_year);
 
                 startActivity(intent);
 

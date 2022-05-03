@@ -14,22 +14,21 @@ public class MainActivity extends AppCompatActivity {
 
         getSupportActionBar().hide();
 
-        Thread thread = new Thread(){
+        Thread thread = new Thread() {
 
-            public void run(){
+            public void run() {
                 try {
                     sleep(1000);
-                }
-                catch (Exception e){
+                } catch (Exception e) {
                     e.printStackTrace();
-                }
-                finally {
-                    Intent intent = new Intent(MainActivity.this , homeactivity.class);
+                } finally {
+                    Intent intent = new Intent(MainActivity.this, homeactivity.class);
                     startActivity(intent);
                 }
             }
 
-        };thread.start();
+        };
+        thread.start();
 
 
     }

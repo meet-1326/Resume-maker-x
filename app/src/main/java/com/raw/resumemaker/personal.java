@@ -19,40 +19,40 @@ public class personal extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal);
 
-                edname = findViewById(R.id.edname);
-                edemail = findViewById(R.id.edemail);
-                edphon = findViewById(R.id.edphon);
-                edaddress = findViewById(R.id.edaddress);
-                reset = findViewById(R.id.reset);
-                next = findViewById(R.id.next);
+        edname = findViewById(R.id.edname);
+        edemail = findViewById(R.id.edemail);
+        edphon = findViewById(R.id.edphon);
+        edaddress = findViewById(R.id.edaddress);
+        reset = findViewById(R.id.reset);
+        next = findViewById(R.id.next);
 
-                reset.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        edname.setText("");
-                        edemail.setText("");
-                        edphon.setText("");
-                        edaddress.setText("");
-                    }
-                });
+        reset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                edname.setText("");
+                edemail.setText("");
+                edphon.setText("");
+                edaddress.setText("");
+            }
+        });
 
-                next.setOnClickListener(new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
+        next.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
 
-                        name = edname.getText().toString();
-                        email = edemail.getText().toString();
-                        phon = edphon.getText().toString();
-                        address = edaddress.getText().toString();
+                name = edname.getText().toString();
+                email = edemail.getText().toString();
+                phon = edphon.getText().toString();
+                address = edaddress.getText().toString();
 
-                        Intent intent = new Intent(personal.this,experiencce.class);
-                        intent.putExtra("name",name);
-                        intent.putExtra("email",email);
-                        intent.putExtra("phon",phon);
-                        intent.putExtra("address",address);
-                        startActivity(intent);
+                Intent intent = new Intent(personal.this, eduction.class);
+                intent.putExtra("name", name);
+                intent.putExtra("email", email);
+                intent.putExtra("phon", phon);
+                intent.putExtra("address", address);
+                startActivity(intent);
 
-                    }
-                });
+            }
+        });
     }
 }

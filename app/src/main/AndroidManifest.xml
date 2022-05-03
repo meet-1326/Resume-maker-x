@@ -10,8 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Resumemaker">
         <activity
-            android:name=".tamplate"
+            android:name=".t1"
             android:exported="false" />
+        <activity
+            android:name=".template"
+            android:exported="false"
+            android:label="Template" />
         <activity
             android:name=".refrence"
             android:exported="false"

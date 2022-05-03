@@ -34,24 +34,24 @@ public class objective extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                name = getIntent().getStringExtra(name);
-                email = getIntent().getStringExtra(email);
-                phon = getIntent().getStringExtra(phon);
-                address = getIntent().getStringExtra(address);
-                course = getIntent().getStringExtra(course);
-                school = getIntent().getStringExtra(school);
-                grade = getIntent().getStringExtra(grade);
-                eduction_year = getIntent().getStringExtra(eduction_year);
-                company_name = getIntent().getStringExtra(company_name);
-                job = getIntent().getStringExtra(job);
-                description = getIntent().getStringExtra(description);
-                year = getIntent().getStringExtra(year);
-                skill1 = getIntent().getStringExtra(skill1);
-                skill2 = getIntent().getStringExtra(skill2);
-                skill3 = getIntent().getStringExtra(skill3);
-                skill4 = getIntent().getStringExtra(skill4);
-                github = getIntent().getStringExtra(github);
-                linkdin = getIntent().getStringExtra(linkdin);
+                name = getIntent().getStringExtra("name");
+                email = getIntent().getStringExtra("email");
+                phon = getIntent().getStringExtra("phon");
+                address = getIntent().getStringExtra("address");
+                course = getIntent().getStringExtra("course");
+                school = getIntent().getStringExtra("school");
+                grade = getIntent().getStringExtra("grade");
+                eduction_year = getIntent().getStringExtra("eduction_year");
+                company_name = getIntent().getStringExtra("company_name");
+                job = getIntent().getStringExtra("job");
+                description = getIntent().getStringExtra("description");
+                year = getIntent().getStringExtra("year");
+                skill1 = getIntent().getStringExtra("skill1");
+                skill2 = getIntent().getStringExtra("skill2");
+                skill3 = getIntent().getStringExtra("skill3");
+                skill4 = getIntent().getStringExtra("skill4");
+                github = getIntent().getStringExtra("github");
+                linkdin = getIntent().getStringExtra("linkdin");
 
                 objective = edobjective.getText().toString();
 
@@ -81,6 +81,7 @@ public class objective extends AppCompatActivity {
 
             }
         });
+
 
     }
 }

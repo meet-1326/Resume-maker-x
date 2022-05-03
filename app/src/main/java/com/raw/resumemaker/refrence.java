@@ -10,7 +10,7 @@ import android.widget.EditText;
 
 public class refrence extends AppCompatActivity {
 
-    String company_name,job,description,year,course,school,grade,eduction_year,name,email,phon,address,skill1,skill2,skill3,skill4,github,linkdin,objective,companayname,companaylink;
+    String company_name, job, description, year, course, school, grade, eduction_year, name, email, phon, address, skill1, skill2, skill3, skill4, github, linkdin, objective, companayname, companaylink;
     EditText edcompanayname,edcompanaylink;
     Button reset,next;
 
@@ -36,30 +36,30 @@ public class refrence extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                name = getIntent().getStringExtra(name);
-                email = getIntent().getStringExtra(email);
-                phon = getIntent().getStringExtra(phon);
-                address = getIntent().getStringExtra(address);
-                course = getIntent().getStringExtra(course);
-                school = getIntent().getStringExtra(school);
-                grade = getIntent().getStringExtra(grade);
-                eduction_year = getIntent().getStringExtra(eduction_year);
-                company_name = getIntent().getStringExtra(company_name);
-                job = getIntent().getStringExtra(job);
-                description = getIntent().getStringExtra(description);
-                year = getIntent().getStringExtra(year);
-                skill1 = getIntent().getStringExtra(skill1);
-                skill2 = getIntent().getStringExtra(skill2);
-                skill3 = getIntent().getStringExtra(skill3);
-                skill4 = getIntent().getStringExtra(skill4);
-                github = getIntent().getStringExtra(github);
-                linkdin = getIntent().getStringExtra(linkdin);
-                objective = getIntent().getStringExtra(objective);
+                name = getIntent().getStringExtra("name");
+                email = getIntent().getStringExtra("email");
+                phon = getIntent().getStringExtra("phon");
+                address = getIntent().getStringExtra("address");
+                course = getIntent().getStringExtra("course");
+                school = getIntent().getStringExtra("school");
+                grade = getIntent().getStringExtra("grade");
+                eduction_year = getIntent().getStringExtra("eduction_year");
+                company_name = getIntent().getStringExtra("company_name");
+                job = getIntent().getStringExtra("job");
+                description = getIntent().getStringExtra("description");
+                year = getIntent().getStringExtra("year");
+                skill1 = getIntent().getStringExtra("skill1");
+                skill2 = getIntent().getStringExtra("skill2");
+                skill3 = getIntent().getStringExtra("skill3");
+                skill4 = getIntent().getStringExtra("skill4");
+                github = getIntent().getStringExtra("github");
+                linkdin = getIntent().getStringExtra("linkdin");
+                objective = getIntent().getStringExtra("objective");
 
                 companayname = edcompanayname.getText().toString();
                 companaylink = edcompanaylink.getText().toString();
 
-                Intent intent = new Intent(refrence.this,homeactivity.class);
+                Intent intent = new Intent(refrence.this,template.class);
 
                 intent.putExtra("name",name);
                 intent.putExtra("email",email);
